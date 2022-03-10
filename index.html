@@ -19,23 +19,7 @@
     <title>McTech</title>
   </head>
   <body>
-    <!-- <%- include('partials/header') %>
-<section><%- include('menuLink') %></section>
-<section><%- include('intro') %></section>
-<section id="about-link"><%- include("about") %></section>
-<section><%- include("skills") %></section>
-<div class="header-br container"></div>
-<section><%- include("contact") %></section>
-<%- include('partials/footer') %>
-<section class="social-img">
-  <div class="navbar-img">
-    <img src="img/social-media-icons/fb.svg" alt="" class="img1" />
-    <img src="img/social-media-icons/ig.svg" alt="" class="img2" />
-    <img src="img/social-media-icons/linkedin.svg" alt="" class="img3" />
-    <img src="img/social-media-icons/telegram.svg" alt="" class="img4" />
-  </div>
-</section>
- -->
+
 
     <nav class="navbar">
       <div class="container">
@@ -49,7 +33,7 @@
           <span class="line"></span>
           <span class="line"></span>
         </div>
-        <div class="navbar menu">
+        <div class="navbar menu show m-auto">
           <a href="#" class="nav-link under">HOME</a>
           <a href="#about-link" class="nav-link under">ABOUT</a>
           <a href="#" class="nav-link under">PROJECT</a>
@@ -103,6 +87,8 @@
       </div>
     </div>
 
+
+  <!-- skills section -->
     <div class="skill container">
       <div class="h-skill fs-1 under">SKILLS</div>
       <div class="programming-language">
@@ -117,9 +103,21 @@
 
     <div class="header-br container"></div>
 
-
+    <!-- project section -->
     <div class="project">
-      <h1>projects</h1>
+      <h1 class="">projects</h1>
+
+
+      <div class="card-1">
+        <div class="content-1">
+          <div class="front-1">
+            Front
+          </div>
+          <div class="back-1">
+            Back!
+          </div>
+        </div>
+      </div>
       
     </div>
     <div class="header-br container"></div>
@@ -193,7 +191,7 @@
       </div>
     </section>
 
-    <footer class="container text-center">Created by McTech. © 2021</footer>
+    <footer class="container text-center">Created by McTech. © <span id="dateTime">2021</span></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -222,5 +220,6 @@
         loop: true,
       });
     </script>
+    <script src="./js-files/script.js"></script>
   </body>
 </html>
