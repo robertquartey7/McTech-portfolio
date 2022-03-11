@@ -19,24 +19,25 @@
     <title>McTech</title>
   </head>
   <body>
-
-
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-brand navbar">
-          <a href=".navbar"
-            ><img src="img/McTech.svg" alt="McTech" class="mctech"
-          /></a>
+    <nav class="navbar" id="navbar">
+      <div class="container d-show">
+        <div class="full d-flex justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img src="./img/McTech.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            <span class="text-dark">McTech</span>
+          </a>
+          <div class="toggle-button" >
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
         </div>
-        <div class="toggle-button">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
-        <div class="navbar menu show m-auto">
+       
+        
+        <div class="navbar menu  m-auto">
           <a href="#" class="nav-link under">HOME</a>
           <a href="#about-link" class="nav-link under">ABOUT</a>
-          <a href="#" class="nav-link under">PROJECT</a>
+          <a href="#project" class="nav-link under">PROJECT</a>
           <a href="#contact-link" class="nav-link under">CONTACT ME</a>
         </div>
       </div>
@@ -87,8 +88,7 @@
       </div>
     </div>
 
-
-  <!-- skills section -->
+    <!-- skills section -->
     <div class="skill container">
       <div class="h-skill fs-1 under">SKILLS</div>
       <div class="programming-language">
@@ -104,23 +104,51 @@
     <div class="header-br container"></div>
 
     <!-- project section -->
-    <div class="project">
-      <h1 class="">projects</h1>
+    <div class="project container rounded shadow" id="project">
+      <h1 class="text-center">Projects</h1>
 
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="card-1">
+          <div class="content-1">
+            <img
+              src="./img/weather_app.png"
+              alt="weather app"
+              class="front-1 border"
+            />
 
-      <div class="card-1">
-        <div class="content-1">
-          <div class="front-1">
-            Front
+            <div class="back-1">
+              <p class="p-1 text-center">
+                <span class="info text-center fs-1"> Project Description</span>
+                This is a weather app. this app take in location as input from
+                the user and then displays the current weather condition of the
+                city and town entered.
+              </p>
+              <a href="https://github.com/robertquartey7/weather_app" class="link-1 btn btn-outline-info">Github</a>
+            </div>
           </div>
-          <div class="back-1">
-            Back!
+        </div>
+
+        <!-- project-2 -->
+
+        <div class="card-1">
+          <div class="content-1">
+            <img
+              src="./img/blogsite.gif"
+              alt="weather app"
+              class="front-1 border"
+            />
+
+            <div class="back-1">
+              <p class="p-1 text-center">
+                <span class="info text-center fs-1"> Project Description</span>
+                This is a Blogsite that contains a loginand a register page where user can register and create thier blog post
+              </p>
+              <a href="https://github.com/robertquartey7/Blogsite" class="link-1 btn btn-outline-info">Github</a>
+            </div>
           </div>
         </div>
       </div>
-      
     </div>
-    <div class="header-br container"></div>
 
     <div class="container" id="contact-link">
       <div class="h-form mb-4 text-center">GET IN TOUCH</div>
@@ -191,7 +219,9 @@
       </div>
     </section>
 
-    <footer class="container text-center">Created by McTech. © <span id="dateTime">2021</span></footer>
+    <footer class="container text-center">
+      Created by McTech. © <span id="dateTime">2021</span>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

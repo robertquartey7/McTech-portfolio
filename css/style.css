@@ -5,10 +5,7 @@ body {
   background-color: #f8f8f8;
   height: 100%;
 }
-.mctech {
-  width: 20%;
-  height: 20%;
-}
+
 /* navbar */
 
 .toggle-button {
@@ -140,13 +137,16 @@ a:hover::before {
   transition: all 0.2s ease-in-out;
 }
 /* projects section */
-.card-1 {
-
+.project {
+  min-height: 100vh;
+  margin-bottom: 1rem;
+}
+.card-1{
   width: 300px;
   height: 300px;
   
-  float: left;
   perspective: 500px;
+  margin: 1rem;
 }
 
 .content-1 {
@@ -163,26 +163,45 @@ a:hover::before {
   transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
 }
-
-.front-1,
-.back-1 {
+.front-1 {
   position: absolute;
   height: 100%;
   width: 100%;
   background: white;
-  line-height: 300px;
-  color: #03446A;
-  text-align: center;
-  font-size: 60px;
+  
+  
   border-radius: 5px;
   backface-visibility: hidden;
 }
-
 .back-1 {
+  height: 100%;
+  width: 100%;
+  
+  font-size: 1rem;
+  border-radius: 5px;
+  backface-visibility: hidden;
   background: #03446A;
   color: white;
   transform: rotateY( 180deg );
-}
+
+} 
+ .back-1 p{
+   height: 100%;
+   display:flex;
+   flex-direction: column;
+
+   justify-content: center;
+  
+  
+ }
+
+ .link-1{
+   position: absolute;
+   bottom: 1rem;
+   left: 50%;
+   transform: translate(-50%);
+ }
+
 /* skills */
 
 .skill {
@@ -226,15 +245,32 @@ a:hover::before {
 
 
 /* footer */
-
-@media screen and (max-width: 700px) {
-  .menu {
-    display: none;
-  }
-
+@media screen and (max-width: 769px) {
   .toggle-button {
     display: flex;
   }
+  
+  .menu{
+    display: none;
+  }
+  .navbar.show{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    
+  }
+  .d-show{
+    flex-direction: column;
+  }
+  .full {
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  }
+}
+@media screen and (max-width: 700px) {
+ 
+
   .contact-div {
     flex-direction: column;
   }
@@ -248,12 +284,7 @@ a:hover::before {
   .about-me {
     margin-bottom: 3rem;
   }
-  .show{
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    
-  }
+
 }
 
 @media screen and (max-width: 500px) {
